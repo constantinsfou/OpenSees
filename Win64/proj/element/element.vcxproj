@@ -244,7 +244,9 @@
     <ClCompile Include="..\..\..\SRC\element\mixedBeamColumn\MixedBeamColumn2d.cpp" />
     <ClCompile Include="..\..\..\SRC\element\mixedBeamColumn\MixedBeamColumn3d.cpp" />
     <ClCompile Include="..\..\..\SRC\element\mixedBeamColumn\MixedBeamColumnAsym3d.cpp" />
-    <ClCompile Include="..\..\..\SRC\element\mvlem\E_SFI.cpp" />
+    <ClCompile Include="..\..\..\SRC\element\mvlem\E_SFI.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\src\element\mvlem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\..\SRC\element\mvlem\MVLEM.cpp" />
     <ClCompile Include="..\..\..\SRC\element\mvlem\SFI_MVLEM.cpp" />
     <ClCompile Include="..\..\..\SRC\element\mvlem\MVLEM_3D.cpp" />
